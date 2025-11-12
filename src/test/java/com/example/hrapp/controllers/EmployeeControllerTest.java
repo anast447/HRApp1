@@ -19,13 +19,13 @@ import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMock
 @AutoConfigureMockMvc(addFilters = false)
 public class EmployeeControllerTest {
     @Autowired
-    private MockMvc mockMvc;
+    public MockMvc mockMvc;
 
     @MockBean
-    private EmployeeService employeeService;
+    public EmployeeService employeeService;
 
     @Autowired
-    private ObjectMapper objectMapper;
+    public ObjectMapper objectMapper;
 
     @Test
     public void testCreateEmployee() throws Exception {

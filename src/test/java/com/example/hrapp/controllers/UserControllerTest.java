@@ -20,16 +20,16 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @AutoConfigureMockMvc(addFilters = false)
 public class UserControllerTest {
     @Autowired
-    private MockMvc mockMvc;
+    public MockMvc mockMvc;
 
     @MockBean
-    private UserService userService;
+    public UserService userService;
 
     @MockBean
-    private PasswordEncoder passwordEncoder;
+    public PasswordEncoder passwordEncoder;
 
     @Autowired
-    private ObjectMapper objectMapper;
+    public ObjectMapper objectMapper;
 
     @Test
     public void testCreateUser() throws Exception {
